@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.15.4/css/all">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/e2eb272111.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -13,10 +13,18 @@
 <body>
   <div class="containerbg">
     <div class="container">
-      <img src="./Photos/26.jpg" id="perfil">
-      <h1 class="name">Patricia De León</h1>
+      <img src="./Photos/perfil1.jpg" id="perfil">
+      <div class="nameCont">
+        <h1 class="name">Patricia De León</h1>
+        <ul>
+          <li><a href="#dancer">Dancer</a></li>
+          <li><a href="#choreo">Choreographer</a></li>
+          <li><a href="#teach">Teacher</a></li>
+          <li><a href="https://www.instagram.com/patsdeleon/" target="_blank" class="fa-brands fa-instagram instagram"></a></li>
+        </ul>
+      </div>
     </div>
-  <div class="container mx-auto">
+  <div class="container mx-auto mt-20">
       <div
         class="panel active"
         style="
@@ -28,7 +36,7 @@
       <div
         class="panel"
         style="
-          background-image: url(./Photos/7.jpg);
+          background-image: url(./Photos/27.jpg);
         "
       >
         <h3>Foto2</h3>
@@ -59,58 +67,96 @@
       </div>
     </div>
   </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <div class="gallery-container">
-    <div class="gallery-item" data-index="1"><img src="./Photos/10.jpg" alt=""></div>
-    <div class="gallery-item" data-index="2"><img src="./Photos/8.jpg" alt=""></div>
-    <div class="gallery-item" data-index="3"><img src="./Photos/3.jpg" alt=""></div>
-    <div class="gallery-item" data-index="4"><img src="./Photos/4.jpg" alt=""></div>
-    <div class="gallery-item" data-index="5"><img src="./Photos/5.jpg" alt=""></div>
-    <div class="gallery-item" data-index="6"><img src="./Photos/6.jpg" alt=""></div>
-    <div class="gallery-item" data-index="7"><img src="./Photos/7.jpg" alt=""></div>
-    <div class="gallery-item" data-index="8"><img src="./Photos/2.jpg" alt=""></div>
-    <div class="gallery-item" data-index="9"><img src="./Photos/9.jpg" alt=""></div>
-    <div class="gallery-item" data-index="10"><img src="./Photos/1.jpg" alt=""></div>
-    <div class="gallery-item" data-index="11"><img src="./Photos/11.jpg" alt=""></div>
-    <div class="gallery-item" data-index="12"><img src="./Photos/12.jpg" alt=""></div>
-    <div class="gallery-item" data-index="13"><img src="./Photos/13.jpg" alt=""></div>
-    <div class="gallery-item" data-index="14"><img src="./Photos/14.jpg" alt=""></div>
-    <div class="gallery-item" data-index="15"><img src="./Photos/15.jpg" alt=""></div>
-    <div class="gallery-item" data-index="16"><img src="./Photos/16.jpg" alt=""></div>
-    <div class="gallery-item" data-index="17"><img src="./Photos/17.jpg" alt=""></div>
-    <div class="gallery-item" data-index="18"><img src="./Photos/18.jpg" alt=""></div>
-    <div class="gallery-item" data-index="19"><img src="./Photos/19.jpg" alt=""></div>
-    <div class="gallery-item" data-index="20"><img src="./Photos/20.jpg" alt=""></div>
-    <div class="gallery-item" data-index="21"><img src="./Photos/21.png" alt=""></div>
-    <div class="gallery-item" data-index="22"><img src="./Photos/22.jpg" alt=""></div>
-    <div class="gallery-item" data-index="23"><img src="./Photos/23.jpg" alt=""></div>
-    <div class="gallery-item" data-index="24"><img src="./Photos/24.jpg" alt=""></div>
-    <div class="gallery-item" data-index="25"><img src="./Photos/25.jpg" alt=""></div>
-    <div class="gallery-item" data-index="26"><img src="./Photos/26.jpg" alt=""></div>
-    <div class="gallery-item" data-index="27"><img src="./Photos/27.jpg" alt=""></div>
-    <div class="gallery-item" data-index="28"><img src="./Photos/28.jpg" alt=""></div>
-    <div class="gallery-item" data-index="29"><img src="./Photos/29.jpg" alt=""></div>
-    <div class="gallery-item" data-index="30"><img src="./Photos/30.jpg" alt=""></div>
-    <div class="gallery-item" data-index="31"><img src="./Photos/31.jpg" alt=""></div>
-    <div class="gallery-item" data-index="32"><img src="./Photos/32.jpg" alt=""></div>
-    <div class="gallery-item" data-index="33"><img src="./Photos/33.jpg" alt=""></div>
-    <div class="gallery-item" data-index="34"><img src="./Photos/34.jpg" alt=""></div>
-    <div class="gallery-item" data-index="35"><img src="./Photos/35.jpg" alt=""></div>
-    <div class="gallery-item" data-index="36"><img src="./Photos/36.jpg" alt=""></div>
-    <div class="gallery-item" data-index="37"><img src="./Photos/37.jpg" alt=""></div>
-    <div class="gallery-item" data-index="38"><img src="./Photos/38.jpg" alt=""></div>
-    <div class="gallery-item" data-index="39"><img src="./Photos/39.jpg" alt=""></div>
-    <div class="gallery-item" data-index="40"><img src="./Photos/40.jpg" alt=""></div>
-    <div class="gallery-item" data-index="41"><img src="./Photos/41.jpg" alt=""></div>
-    <div class="gallery-item" data-index="42"><img src="./Photos/42.jpg" alt=""></div>
-    <div class="gallery-item" data-index="43"><img src="./Photos/43.jpg" alt=""></div>
-    <div class="gallery-item" data-index="44"><img src="./Photos/44.jpg" alt=""></div>
-    <div class="gallery-item" data-index="45"><img src="./Photos/45.jpg" alt=""></div>
-    <div class="gallery-item" data-index="46"><img src="./Photos/46.jpg" alt=""></div>
-    <div class="gallery-item" data-index="47"><img src="./Photos/47.jpg" alt=""></div>
-    <div class="gallery-item" data-index="48"><img src="./Photos/48.jpg" alt=""></div>
-    <div class="gallery-item" data-index="49"><img src="./Photos/49.jpg" alt=""></div>
-    <div class="gallery-item" data-index="50"><img src="./Photos/50.jpg" alt=""></div>
-    <div class="gallery-item" data-index="51"><img src="./Photos/51.jpg" alt=""></div>
+    <div id="dancer" class="gallery-item" data-index="1"><img src="./Photos/10.jpg" alt=""></div>
+    <div class="gallery-item" data-index="2"><img src="./Photos/3.jpg" alt=""></div>
+    <div class="gallery-item" data-index="3"><img src="./Photos/4.jpg" alt=""></div>
+    <div class="gallery-item" data-index="4"><img src="./Photos/1.jpg" alt=""></div>
+    <div class="gallery-item" data-index="5"><img src="./Photos/7.jpg" alt=""></div>
+    <div class="gallery-item" data-index="6"><img src="./Photos/8.jpg" alt=""></div>
+    <div class="gallery-item" data-index="7"><img src="./Photos/12.jpg" alt=""></div>
+    <div class="gallery-item" data-index="8"><img src="./Photos/13.jpg" alt=""></div>
+    <div class="gallery-item" data-index="9"><img src="./Photos/16.jpg" alt=""></div>
+    <div class="gallery-item" data-index="10"><img src="./Photos/18.jpg" alt=""></div>
+    <div class="gallery-item" data-index="11"><img src="./Photos/20.jpg" alt=""></div>
+    <div class="gallery-item" data-index="12"><img src="./Photos/22.jpg" alt=""></div>
+    <div class="gallery-item" data-index="13"><img src="./Photos/23.jpg" alt=""></div>
+    <div class="gallery-item" data-index="14"><img src="./Photos/24.jpg" alt=""></div>
+    <div class="gallery-item" data-index="15"><img src="./Photos/26.jpg" alt=""></div>
+    <div class="gallery-item" data-index="16"><img src="./Photos/27.jpg" alt=""></div>
+    <div class="gallery-item" data-index="17"><img src="./Photos/28.jpg" alt=""></div>
+    <div class="gallery-item" data-index="18"><img src="./Photos/29.jpg" alt=""></div>
+    <div class="gallery-item" data-index="19"><img src="./Photos/30.jpg" alt=""></div>
+    <div class="gallery-item" data-index="20"><img src="./Photos/34.jpg" alt=""></div>
+    <div class="gallery-item" data-index="21"><img src="./Photos/35.jpg" alt=""></div>
+    <div class="gallery-item" data-index="22"><img src="./Photos/38.jpg" alt=""></div>
+    <div class="gallery-item" data-index="23"><img src="./Photos/39.jpg" alt=""></div>
+    <div class="gallery-item" data-index="24"><img src="./Photos/40.jpg" alt=""></div>
+    <div class="gallery-item" data-index="25"><img src="./Photos/41.jpg" alt=""></div>
+    <div class="gallery-item" data-index="26"><img src="./Photos/42.jpg" alt=""></div>
+    <div class="gallery-item" data-index="27"><img src="./Photos/43.jpg" alt=""></div>
+    <div class="gallery-item" data-index="28"><img src="./Photos/45.jpg" alt=""></div>
+    <div class="gallery-item" data-index="29"><img src="./Photos/46.jpg" alt=""></div>
+    <div class="gallery-item" data-index="30"><img src="./Photos/47.jpg" alt=""></div>
+    <div class="gallery-item" data-index="31"><img src="./Photos/52.jpg" alt=""></div>
+    <div class="gallery-item" data-index="32"><img src="./Photos/53.jpg" alt=""></div>
+    <div class="gallery-item" data-index="33"><img src="./Photos/54.jpg" alt=""></div>
+    <div class="gallery-item" data-index="34"><img src="./Photos/55.jpg" alt=""></div>
+    <div class="gallery-item" data-index="35"><img src="./Photos/56.jpg" alt=""></div>
+    <div class="gallery-item" data-index="36"><img src="./Photos/57.jpg" alt=""></div>
+    <div class="gallery-item" data-index="37"><img src="./Photos/58.jpg" alt=""></div>
+    <div class="gallery-item" data-index="38"><img src="./Photos/59.jpg" alt=""></div>
+    <div class="gallery-item" data-index="39"><img src="./Photos/60.jpg" alt=""></div>
+    <div class="gallery-item" data-index="40"><img src="./Photos/61.jpg" alt=""></div>
+    <div class="gallery-item" data-index="41"><img src="./Photos/62.jpg" alt=""></div>
+    <div class="gallery-item" data-index="42"><img src="./Photos/63.jpg" alt=""></div>
+    <div class="gallery-item" data-index="43"><img src="./Photos/64.jpg" alt=""></div>
+    <div class="gallery-item" data-index="44"><img src="./Photos/65.jpg" alt=""></div>
+    <div class="gallery-item" data-index="45"><img src="./Photos/66.jpg" alt=""></div>
+    <div class="gallery-item" data-index="46"><img src="./Photos/67.jpg" alt=""></div>
+    <div class="gallery-item" data-index="47"><img src="./Photos/68.jpg" alt=""></div>
+    <div class="gallery-item" data-index="48"><img src="./Photos/69.jpg" alt=""></div>
+    <div class="gallery-item" data-index="49"><img src="./Photos/70.jpg" alt=""></div>
+    <div class="gallery-item" data-index="50"><img src="./Photos/71.jpg" alt=""></div>
+    <div class="gallery-item" data-index="51"><img src="./Photos/72.jpg" alt=""></div>
+    <div class="gallery-item" data-index="52"><img src="./Photos/73.jpg" alt=""></div>
+    <div class="gallery-item" data-index="53"><img src="./Photos/74.jpg" alt=""></div>
+    <div class="gallery-item" data-index="54"><img src="./Photos/75.jpg" alt=""></div>
+    <div class="gallery-item" data-index="55"><img src="./Photos/76.jpg" alt=""></div>
+    <div class="gallery-item" data-index="56"><img src="./Photos/77.jpg" alt=""></div>
+    <div class="gallery-item" data-index="57"><img src="./Photos/78.jpg" alt=""></div>
+    <div class="gallery-item" data-index="58"><img src="./Photos/79.jpg" alt=""></div>
+    <div class="gallery-item" data-index="59"><img src="./Photos/80.jpg" alt=""></div>
+    <div class="gallery-item" data-index="60"><img src="./Photos/81.jpg" alt=""></div>
+    <div class="gallery-item" data-index="61"><img src="./Photos/82.jpg" alt=""></div>
+    <div class="gallery-item" data-index="62"><img src="./Photos/83.jpg" alt=""></div>
+    <div class="gallery-item" data-index="63"><img src="./Photos/84.jpg" alt=""></div>
+    <div class="gallery-item" data-index="64"><img src="./Photos/85.jpg" alt=""></div>
+    <div class="gallery-item" data-index="65"><img src="./Photos/86.jpg" alt=""></div>
+    <div class="gallery-item" data-index="66"><img src="./Photos/87.jpg" alt=""></div>
+    <div id="choreo" class="gallery-item" data-index="67"><img src="./Photos/c1.jpg" alt=""></div>
+    <div class="gallery-item" data-index="68"><img src="./Photos/c2.jpg" alt=""></div>
+    <div class="gallery-item" data-index="69"><img src="./Photos/c3.jpg" alt=""></div>
+    <div class="gallery-item" data-index="70"><img src="./Photos/c4.jpg" alt=""></div>
+    <div class="gallery-item" data-index="71"><img src="./Photos/c5.jpg" alt=""></div>
+    <div class="gallery-item" data-index="72"><img src="./Photos/c6.jpg" alt=""></div>
+    <div class="gallery-item" data-index="73"><img src="./Photos/c7.jpg" alt=""></div>
+    <div class="gallery-item" data-index="74"><img src="./Photos/c8.jpg" alt=""></div>
+    <div class="gallery-item" data-index="75"><img src="./Photos/c9.jpg" alt=""></div>
+    <div class="gallery-item" data-index="76"><img src="./Photos/c11.jpg" alt=""></div>
+    <div class="gallery-item" data-index="77"><img src="./Photos/c12.jpg" alt=""></div>
+    <div class="gallery-item" data-index="78"><img src="./Photos/c13.jpg" alt=""></div>
+    <div id="teach" class="gallery-item" data-index="79"><img src="./Photos/t1.jpg" alt=""></div>
+    <div class="gallery-item" data-index="80"><img src="./Photos/t2.jpg" alt=""></div>
+    <div class="gallery-item" data-index="81"><img src="./Photos/t3.jpg" alt=""></div>
+    <div class="gallery-item" data-index="82"><img src="./Photos/t4.jpg" alt=""></div>
+    <div class="gallery-item" data-index="83"><img src="./Photos/t5.jpg" alt=""></div>
+    <div class="gallery-item" data-index="84"><img src="./Photos/t6.jpg" alt=""></div>
+    <div class="gallery-item" data-index="85"><img src="./Photos/t7.jpg" alt=""></div>
+    <div class="gallery-item" data-index="86"><img src="./Photos/t8.jpg" alt=""></div>
+    <div class="gallery-item" data-index="87"><img src="./Photos/t9.jpg" alt=""></div>
+
   </div>
   <script src="code.js"></script>
 </body>

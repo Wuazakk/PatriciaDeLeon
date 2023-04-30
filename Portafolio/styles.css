@@ -4,45 +4,78 @@
   box-sizing: border-box;
   /*border: solid 2px black;*/
 }
+html {
+  scroll-behavior: smooth
+}
 
 body {
-  font-family: "Muli", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   align-items: center;
   justify-content: center;
   margin: 0;
-  background-color: rgba(228, 224, 216, 0.72);
+  background-color: #0b3b53e3;
 }
 
 .containerbg {
-  background-image: linear-gradient(rgba(59, 55, 55, 0.8), rgba(59, 56, 56, 0.2)), url("./Photos/bg6.jpg");
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(59, 56, 56, 0.3)), url("./Photos/bg10.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #perfil {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 50%;
-  margin: auto auto;
   padding: 5px;
   box-shadow: 3px 3px 5px 5px  #0000008f;
+  flex-shrink: 0;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  border-left: solid 2px #6c7f83;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .name {
-  align-items: center;
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2.7rem;
+  font-weight: 900;
 }
+
+
+
+.nameCont {
+  color: #ffffff;
+  align-self: center;
+}
+
 
 .container {
   display: flex;
   width: 80vw;
+  flex-wrap: nowrap;
+  margin: auto;
+  justify-content: space-evenly;
   
 }
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
-    background-color: #fff;
+    justify-content: center;
+    background-color: #0b3b53e3;
     width: 80vw;
+    margin: auto;
+    column-gap: 10px;
     padding: 10px;
     box-shadow: 0 0 3px 0 #000000;
 }
@@ -87,8 +120,11 @@ body {
   left: 20px;
   margin: 0;
   opacity: 0;
-  background-color: antiquewhite;
-  color:darkslategray;
+  background-color: darkslategray;
+  color:wheat;
+  border-radius: 10%;
+  padding: 10px;
+  display: none;
 }
 
 .panel.active {
@@ -146,6 +182,26 @@ body {
     font-size: 2.5rem;
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 2rem; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 @media (max-width: 767px) {
     .gallery-container {
         width: 100%;
@@ -159,16 +215,21 @@ body {
         height: 60%;
         margin: 15% auto;
     }
+    .panel:nth-of-type(5) {
+      display: none;
+    }
   }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .container {
     width: 100vw;
     overflow: hidden;
+    margin-top: 0;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(5) {
+  .panel:nth-of-type(4) {
     display: none;
   }
 
@@ -185,4 +246,40 @@ body {
 .fa-solid {
     font-size: 1.5rem;
 }
+
+#perfil {
+  width: 155px;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px auto 20px;
+  padding: 2px;
+  box-shadow: 1px 2px 3px 3px  #0000008f;
+  flex-shrink: 0;
+}
+.name {
+  font-size: 1.9rem;
+  font-weight: 700;
+  padding-left: 40px;
+  margin-top: 10px;
+}
+li {
+  margin-left: 5px;
+  padding-left: 5px;
+  font-size: 1rem;
+  align-self: center;
+}
+
+.mt-20 {
+  margin-top: 0;
+}
+.containerbg {
+  height: 100vh;
+}
+
+.instagram {
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
 }
